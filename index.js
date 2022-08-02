@@ -56,9 +56,19 @@ for(var i = 0; i < document.querySelectorAll(".featured-image").length; i++) {
                     tweeKarrenJoh.play();
             break;
 
+            case "fonsalbino":
+                var fonsAlbino = new Audio('sounds/fons-albino.mp3')
+                    fonsAlbino.play();
+            break;
+
             case "henk":
                 var klootZakken = new Audio('sounds/klootzakken.mp3')
                     klootZakken.play();
+            break;
+
+            case "fonskanni":
+                var fonsKanNi = new Audio('sounds/fons-kan-ni.mp3')
+                    fonsKanNi.play();
             break;
         
             default:

@@ -149,7 +149,7 @@ body {
     z-index: 999;
 }
 
-/*******RESPONSIVE DESIGN HEADER AND CONTENT*******/
+/*******RESPONSIVE DESIGN HEADER*******/
 @media only screen and (min-width: 768px) {
 
     .heading {
@@ -243,7 +243,7 @@ body {
 }
 
 
-/* Content */
+/*******CONTENT*******/
 .main-content {
     display: flex;
     justify-content: center;
@@ -251,7 +251,7 @@ body {
 
 .cards {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -261,9 +261,9 @@ body {
 
 .profile-pic {
     border-radius: 20px;
-    margin: 15px 15px 15px 15px;
+    margin: 16px 10px 15px 10px;
     height: 160px;
-    width: 160px;
+    width: 170px;
 }
 
 .card {
@@ -275,7 +275,7 @@ body {
     flex-direction: column;
     font-family: 'Poppins';
     height: 250px;
-    width: 190px;
+    width: 204px;
     overflow: hidden;
     margin: 10px;
 }
@@ -310,7 +310,6 @@ body {
     font-size: .9rem;
     position: relative;
     width: 170px;
-    
     transition: all 0.5s 0s ease;    
     opacity: 1;
     
@@ -331,4 +330,14 @@ body {
     opacity: .9;
     cursor: pointer;
    
+}
+
+/*******RESPONSIVE CONTENT*******/
+
+@media only screen and (min-width: 768px) {
+    .card {
+    height: 250px;
+    width: 204px;
+    margin: 10px;
+    }
 }
