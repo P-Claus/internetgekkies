@@ -11,19 +11,21 @@ body {
 
 /*******DESIGN OF THE HAMBURGER MENU*******/
 .menu-btn {
-    display: flex;
-    align-items: center;
-    width: 80px;
-    height: 80px;
+    position: absolute;
+    top: 4.5rem;
+    width: 70px;
+    height: 70px;
     cursor: pointer;
     z-index: 3;
+    right: 0;
+    
     
 }
 
 .menu-btn-burger {
-    width: 40px;
+    width: 50px;
     height: 4px;
-    background: white;
+    background: #558f3d;
     border-radius: 5px;
     transition: all .5s ease-in-out;
 }
@@ -32,9 +34,9 @@ body {
 .menu-btn-burger::after {
     content: "";
     position: absolute;
-    width: 40px;
+    width: 50px;
     height: 4px;
-    background: white;
+    background: #558f3d;
     border-radius: 5px;
     transition: all .5s ease-in-out;
 }
@@ -71,63 +73,32 @@ body {
 
 .navbar {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
 }
 
 .nav {
     display: none;
-    position: fixed;
-    z-index: 99;
-    width: 66%;
-    right: 0;
-    top: 0;
-    background-color: gray;
-    height: 100vh;
+    position: relative;
+    width: 100%;
+    background-color: #558f3d;
+    height: auto;
     padding: 1rem;
-    
-
 }
 
 .nav-clicked {
-    display: block;
-    animation: menu-entrance 1s ease 0s 1 normal forwards;    
-
-}
-
-@keyframes menu-entrance {
-	0% {
-		
-		transform: translateX(250px);
-	}
-
-	100% {
-		
-		transform: translateX(0);
-	}
-}
-
-.primary-nav {
-    margin-top: 8rem;
+    display: block;    
 }
 
 .primary-nav li {
     list-style-type: none;
-    animation: list-entrance 1s ease 1 normal forwards;
+    
 }
 
-@keyframes list-entrance {
-	0% {
-		opacity: 0;
-		transform: translateX(50px);
-	}
 
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-}
+
 
 .primary-nav li a {
     color: white;
@@ -145,8 +116,11 @@ body {
 }
 
 .menu-btn {
-    
+    margin-right: 35px;
+    display: flex;
+    justify-content: center;
     z-index: 999;
+    color: #558f3d;
 }
 
 /*******RESPONSIVE DESIGN HEADER*******/
@@ -168,6 +142,8 @@ body {
         width: 800px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
         
     }
    
@@ -179,7 +155,6 @@ body {
         position: relative;
         height: auto;
         padding: 0;
-
     }
 
     .primary-nav {
@@ -192,7 +167,7 @@ body {
         color: black;
         font-size: 1rem;
         padding: .1rem 10px;
-        animation: none;
+        
 
     }
 
@@ -247,6 +222,7 @@ body {
 .main-content {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .cards {
@@ -338,6 +314,7 @@ body {
     .card {
     height: 250px;
     width: 204px;
+    overflow: hidden;
     margin: 10px;
     }
 }
